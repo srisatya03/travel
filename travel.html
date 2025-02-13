@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Landing Page</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+    <nav>
+        <img src="travel logo.jpeg" alt="Logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button onclick="location.href='#signin'">Sign In</button></li>
+            <li><button onclick="location.href='#signup'">Sign Up</button></li>
+        </ul>
+    </nav>
+    <section id="home">
+    <h1>Welcome to Travels</h1>
+    <p>Explore the world with us. Discover new places, experience new cultures, and make unforgettable memories.</p>
+    <img src="travel1.jpeg" alt="Travel Image">
+    </section>
+    <section id="about">
+    <h2>About Us</h2>
+    <p>At Travels, we believe in making travel accessible, enjoyable, and unforgettable. Our mission is to help you explore the world with ease and confidence. From stunning beaches to towering mountains, we bring the world to your fingertips.</p>
+    <img src="travel2.jpg" alt="About Us Image">
+    <p class="para">Our team of travel enthusiasts curates the best destinations, offers personalized itineraries, and ensures a hassle-free booking experience. Join us on a journey to discover the beauty and wonder of our planet.</p>
+    </section>
+    <section id="services">
+    <h2>Our Services</h2>
+    <div class="services-container">
+        <div class="service-card">
+            <h3>Flight Bookings</h3>
+            <p>We offer the best deals on flights to your favorite destinations worldwide.</p>
+        </div>
+        <div class="service-card">
+            <h3>Hotel Reservations</h3>
+            <p>Find and book comfortable accommodations that suit your needs and budget.</p>
+        </div>
+        <div class="service-card">
+            <h3>Travel Packages</h3>
+            <p>Choose from our curated travel packages for a hassle-free vacation experience.</p>
+        </div>
+    </div>
+    </section>
+    <section id="contact">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    </section>
+    <div id="signin-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('signin-modal')">&times;</span>
+            <h2>Sign In</h2>
+            <form id="signin-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+    </div>
+    <div id="signup-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal('signup-modal')">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <script src="travel.js"></script>
+    <footer>
+    <p>&copy; 2025 TravelCo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
